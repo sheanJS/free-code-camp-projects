@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chess Club Survey</title>
+</head>
+
+<body>
+    <h1 id="title">Your Move: A Chess Player's Survey</h1>
+    <p id="description">Help out our local club by sharing your favorite openings, skill level, and more!</p>
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:
+            <input id="name" type="text" placeholder="Name, first and last" required>
+        </label>
+
+        <label id="email-label" for="email">Email Address:
+            <input id="email" type="email" placeholder="Full email address" required>
+        </label>
+
+        <label id="number-label" for="number">Please enter your peak FIDE or US Chess rating, if you have one:
+            <input id="number" type="number" min="0" max="2900" placeholder="ex: 1000">
+        </label>
+
+        <label for="dropdown">How did you find the club?</label>
+        <select id="dropdown" required>
+            <option value="" disabled selected>Please select an option</option>
+            <option value="website"> Our Website </option>
+            <option value="wordOfMouth"> Word of Mouth </option>
+            <option value="searchEngine"> Search Engine </option>
+            <option value="other"> Other </option>
+        </select>
+
+        <fieldset>
+            <legend>Please select your favorite opening:</legend>
+            <label><input type="radio" name="opening" value="Spanish">Spanish</label>
+            <label><input type="radio" name="opening" value="Sicilian">Sicilian</label>
+            <label><input type="radio" name="opening" value="Italian">Italian</label>
+            <label><input type="radio" name="opening" value="Scotch">Scotch</label>
+            <label><input type="radio" name="opening" value="Grünfeld">Grünfeld</label>
+            <label><input type="radio" name="opening" value="French">French</label>
+            <label><input type="radio" name="opening" value="Caro-Kann">Caro-Kann</label>
+            <label><input type="radio" name="opening" value="Pirc">Pirc</label>
+            <label><input type="radio" name="opening" value="Alekhine">Alekhine</label>
+            <label><input type="radio" name="opening" value="King's Indian">King's Indian</label>
+            <label><input type="radio" name="opening" value="Queen's Gambit">Queen's Gambit</label>
+            <label><input type="radio" name="opening" value="Nimzo-Indian">Nimzo-Indian</label>
+            <label><input type="radio" name="opening" value="Benoni">Benoni</label>
+            <label><input type="radio" name="opening" value="English">English</label>
+            <label><input type="radio" name="opening" value="Reti">Reti</label>
+            <label><input type="radio" name="opening" value="Dutch">Dutch</label>
+            <label><input type="radio" name="opening" value="Modern">Modern</label>
+            <label><input type="radio" name="opening" value="Bird's">Bird's</label>
+            <label><input type="radio" name="opening" value="Vienna">Vienna</label>
+            <label><input type="radio" name="opening" value="Scandinavian">Scandinavian</label>
+            <label><input type="radio" name="opening" value="Philidor">Philidor</label>
+            <label><input type="radio" name="opening" value="London System">London System</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Please select a course you would be most interested in taking (select all that apply):</legend>
+            <label><input type="checkbox" name="course" value="blackOpenings">Openings For Black</label>
+            <label><input type="checkbox" name="course" value="whiteOpenings">Openings For White</label>
+            <label><input type="checkbox" name="course" value="endGame">Endgames</label>
+            <label><input type="checkbox" name="course" value="middleGame">Middle Game Tactics and Traps</label>
+            <label><input type="checkbox" name="course" value="famousGames">Famous Games Study</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Any additional comments/questions?</legend>
+            <label for="comments">Your comments</label>
+            <textarea id="comments" name="comments" placeholder="Enter your comments here" rows="5"
+                cols="50"></textarea>
+        </fieldset>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
